@@ -13,5 +13,6 @@ Machine tags can be used with Plazes in two ways:
 == Tagging Plazes ==
 
  * TaggingTelephone
+ * TaggingFlickr
 
 == Tagging Other Objects ==
