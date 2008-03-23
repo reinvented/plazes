@@ -1,10 +1,10 @@
 #summary Proposal for tagging Plazes with Flickr photos
 
-= Introduction =
+== Introduction ==
 
 MachineTags can be used to add meta-data to individual Plazes.  This pages describes a proposed method for tagging Plazes with Flickr photo IDs, to allow a Plaze to be connected to photos of itself.
 
-= Details =
+== Details ==
 
 Every Flickr photo has a unique *photo_id*.  
 
