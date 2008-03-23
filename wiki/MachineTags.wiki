@@ -20,3 +20,7 @@ Machine tags can be used with Plazes in two ways:
  * [Tagging23]
 
 === Tagging Other Objects ===
+
+ * TaggingPlazes
+ * TaggingUsers
+ * TaggingPresences
