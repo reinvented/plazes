@@ -23,6 +23,13 @@ For example:
 tel:work="+1 902 892 2556"
 }}}
 
+or
+
+
+{{{
+tel:work="+19028922556"
+}}}
+
 This would be equivalent to the hCard construct:
 
 {{{
