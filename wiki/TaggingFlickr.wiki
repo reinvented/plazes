@@ -1,0 +1,19 @@
+#summary Proposal for tagging Plazes with Flickr photos
+
+= Introduction =
+
+MachineTags can be used to add meta-data to individual Plazes.  This pages describes a proposed method for tagging Plazes with Flickr photo IDs, to allow a Plaze to be connected to photos of itself.
+
+= Details =
+
+Every Flickr photo has a unique *photo_id*.  
+
+Passing this ID to the Flickr API method [http://www.flickr.com/services/api/flickr.photos.getInfo.html flickr.photos.getInfo] retrieves information about the photo, including enough information to construct URLs that lead to the photo.  As such, all we need to tag is the photo_id.
+
+For example:
+
+{{{
+flickr:photo_id=136020890
+}}}
+
+would relate the given Plaze to [http://flickr.com/photos/reinvented/136020890/ this Flickr photo].
