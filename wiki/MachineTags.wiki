@@ -12,6 +12,7 @@ Machine tags can be used with Plazes in two ways:
 
 === Tagging Plazes ===
 
+ * TaggingWifi
  * TaggingTelephone
 
 ==== Photographs ===
