@@ -1,6 +1,6 @@
 #summary Specifications and proposals for using machine tags for Plazes
 
-= Introduction =
+== Introduction ==
 
 The [http://www.flickr.com/groups/api/discuss/72157594497877875 Flickr documentation for machine tag format], aka "triple tags," a mechanism for enhanced tagging designed primarily for machine-readable applications.
 
@@ -10,9 +10,9 @@ Machine tags can be used with Plazes in two ways:
 
  2. To tag objects from ''elsewhere'' so as to connect them with a Plaze, a Plazes user or a Plazes presence.  For example, a Flickr photo can be tagged *plazes:id=87873* to indicate that it's a photo of a Plaze with id of 87873.
 
-== Tagging Plazes ==
+=== Tagging Plazes ===
 
  * TaggingTelephone
  * TaggingFlickr
 
-== Tagging Other Objects ==
+=== Tagging Other Objects ===
