@@ -12,7 +12,6 @@ Machine tags can be used with Plazes in two ways:
 
 == Tagging Plazes ==
 
- * TaggingAddress
  * TaggingTelephone
 
 == Tagging Other Objects ==
