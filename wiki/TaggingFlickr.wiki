@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-MachineTags can be used to add meta-data to individual Plazes.  This pages describes a proposed method for tagging Plazes with Flickr photo IDs, to allow a Plaze to be connected to photos of itself.
+MachineTags can be used to add meta-data to individual Plazes.  This page describes a proposed method for tagging Plazes with Flickr photo IDs, to allow a Plaze to be connected to photos of itself.
 
 == Details ==
 
