@@ -1,0 +1,27 @@
+#summary Proposal for tagging Plazes with telephone numbers.
+
+= Introduction =
+
+MachineTags can be used to add meta-data to individual Plazes.  This pages describes a proposed method for tagging Plazes with telephone number information.
+
+= Details =
+
+The [http://microformats.org/wiki/hcard#adr_tel_email_types hCard specification] outlines a set of telephone number types.  It's proposed that we use these types to using the following machine tag format:
+
+{{{
+tel:type=value
+}}}
+
+For example:
+
+{{{
+tel:work=+19028922556
+}}}
+
+This would be equivalent to the hCard construct:
+
+{{{
+<div class="tel">
+   <span class="type">Work</span> +19028922556
+</div>
+}}}
