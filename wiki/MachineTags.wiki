@@ -17,6 +17,6 @@ Machine tags can be used with Plazes in two ways:
 ==== Photographs ===
 
  * TaggingFlickr
- * Tagging23
+ * [Tagging23]
 
 === Tagging Other Objects ===
