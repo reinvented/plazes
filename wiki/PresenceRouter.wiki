@@ -2,7 +2,7 @@
 
 == Description ==
 
-PresenceRouter is a Mac OS X application that takes you current Plazes geopresence information and routes it to other web services of your choice -- Jaiku, Facebook, Twitter, etc.
+!PresenceRouter is a Mac OS X application that takes you current Plazes geopresence information and routes it to other web services of your choice -- Jaiku, Facebook, Twitter, etc.
 
 == Links ==
 
