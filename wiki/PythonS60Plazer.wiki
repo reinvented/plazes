@@ -1,0 +1,25 @@
+#summary A Plazer for the Nokia Series 60 devices.
+
+== Description ==
+
+Python S60 Plazer is a Python application that runs on wifi-enabled Nokia Series 60 devices.
+
+From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/annotate/tom_croucher%40yahoo.com-20080212180829-pqj5y0m5gr8beh0l?file_id=plazerapp.py-20080206112628-xj5dkwd7dnv8hmpm-1 code comments]:
+
+ This is application interacts with Plazes to help you find a choose Plazes based on nearby Wireless networks. Think of it as a mobile Plazer.
+
+== Links ==
+
+ * [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/files Download] (source only)
+ * [https://launchpad.net/pys60plazer/ Python S60 Plazer home]
+
+=== Dependencies ===
+
+ * [http://wiki.opensource.nokia.com/projects/Python_for_S60 Python for S60]
+ * [http://www-rp.lip6.fr/~berger/pys60.html wlantools module]
+
+== Developers ==
+
+ * [http://www.kid666.com/blog/ Tom Hughes-Croucher]
+
+== Screen Shots ==
