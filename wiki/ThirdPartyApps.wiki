@@ -1,0 +1,5 @@
+#summary A gallery of third-party applications that uses the Plazes API.
+
+ * [maemoplazer]
+ * [Python S60 Plazer]
+ * [iPlazer]
