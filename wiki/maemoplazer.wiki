@@ -4,13 +4,14 @@
 
 The maemoplazer application runs on the [http://www.nseries.com/products/n800/ Nokia N800].
 
+== Links ==
+
+ * [https://garage.maemo.org/scm/?group_id=190 Download] (via Subversion only)
+ * [https://garage.maemo.org/projects/maemoplazer/ maemoplazer home]
+
 == Developers ==
 
  * [http://bergie.iki.fi/blog/  Henri Bergius]
-
-== Links ==
-
- * [https://garage.maemo.org/projects/maemoplazer/ maemoplazer home]
 
 == Screen Shots ==
 
