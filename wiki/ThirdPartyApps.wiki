@@ -7,3 +7,13 @@ A _Plazer_ is a tool that updates your Plazes geopresence information.
  * [maemoplazer]
  * [PythonS60Plazer]
  * [iPlazer]
+
+== Republishing ==
+
+These applications take Plazes geopresence information and republish or reuse it elsewhere.
+
+ * PresenceRouter
+
+== Links ==
+
+ * [http://blog.plazes.com/?p=225 PlazeCamp Demo Session Video]
