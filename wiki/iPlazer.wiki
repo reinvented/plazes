@@ -18,3 +18,5 @@ From the [http://iplazer.com/#_about About] page:
  * [http://ruk.ca/ Peter Rukavina]
 
 == Screen Shots ==
+
+[http://plazes.googlecode.com/files/screenshot-iplazer-1.png] [http://plazes.googlecode.com/files/screenshot-iplazer-2.png] [http://plazes.googlecode.com/files/screenshot-iplazer-3.png]
