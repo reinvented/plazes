@@ -24,8 +24,4 @@ From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/anno
 
 == Screen Shots ==
 
-[http://plazes.googlecode.com/files/screenshot-pys60plazer-1.png]
-
-[http://plazes.googlecode.com/files/screenshot-pys60plazer-2.png]
-
-[http://plazes.googlecode.com/files/screenshot-pys60plazer-3.png]
+[http://plazes.googlecode.com/files/screenshot-pys60plazer-1.png][http://plazes.googlecode.com/files/screenshot-pys60plazer-2.png][http://plazes.googlecode.com/files/screenshot-pys60plazer-3.png]
