@@ -1,3 +1,17 @@
 #summary A Plazer for the Nokia 810 and related devices.
 
+== Description ==
+
+The maemoplazer application runs on the [http://www.nseries.com/products/n800/ Nokia N800].
+
+== Developers ==
+
+ * [http://bergie.iki.fi/blog/  Henri Bergius]
+
+== Links ==
+
  * [https://garage.maemo.org/projects/maemoplazer/ maemoplazer home]
+
+== Screen Shots ==
+
+[http://plazes.googlecode.com/files/screenshot-maemoplazer.png]
