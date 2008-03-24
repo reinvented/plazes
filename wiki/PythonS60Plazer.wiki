@@ -2,7 +2,7 @@
 
 == Description ==
 
-Python S60 Plazer is a Python application that runs on wifi-enabled Nokia Series 60 devices.
+Python S60 Plazer is a Python application that runs on wifi-enabled Nokia Series 60 devices like the [http://www.nseries.com/products/n95 Nokia N95].
 
 From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/annotate/tom_croucher%40yahoo.com-20080212180829-pqj5y0m5gr8beh0l?file_id=plazerapp.py-20080206112628-xj5dkwd7dnv8hmpm-1 code comments]:
 
