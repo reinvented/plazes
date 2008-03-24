@@ -4,9 +4,10 @@
 
 A _Plazer_ is a tool that updates your Plazes geopresence information.
 
- * [maemoplazer]
- * [PythonS60Plazer]
- * [iPlazer]
+ * [maemoplazer] -- for devices like the Nokia N800.
+ * [PythonS60Plazer] -- for devices like the Nokia N95.
+ * [iPlazer] -- for the iPhone and iPod Touch.
+ * [http://code.google.com/p/twaiku/ Twaiku] -- for Quicksilver.
 
 == Republishing ==
 
