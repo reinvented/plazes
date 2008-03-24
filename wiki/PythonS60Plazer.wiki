@@ -23,3 +23,9 @@ From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/anno
  * [http://www.kid666.com/blog/ Tom Hughes-Croucher]
 
 == Screen Shots ==
+
+[http://plazes.googlecode.com/files/screenshot-pys60plazer-1.png]
+
+[http://plazes.googlecode.com/files/screenshot-pys60plazer-2.png]
+
+[http://plazes.googlecode.com/files/screenshot-pys60plazer-3.png]
