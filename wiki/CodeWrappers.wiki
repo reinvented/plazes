@@ -1,0 +1,13 @@
+#summary Utility code for various programming languages to make using the Plazes API easier.
+
+These are wrappers around the Plazes API that offer ease of use in various programming languages.
+
+== PHP ==
+
+ * [http://code.google.com/p/servicesplazes/ Services_Plazes]
+
+== Java ==
+
+==== Need Updating ====
+
+ * [http://downside.ch/blog/?page_id=9 jplazes] -- uses the deprecated Plazes API.
