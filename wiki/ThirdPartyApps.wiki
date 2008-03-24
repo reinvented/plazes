@@ -11,6 +11,7 @@ A _Plazer_ is a tool that updates your Plazes geopresence information.
 ==== Need Updating ====
 
  * [http://code.google.com/p/twaiku/ Twaiku] -- for Quicksilver (uses the deprecated Plazes API)
+ * [http://automatique.svnrepository.com/tijs/trac.cgi/browser/quicksilver/jaiku-plazes Jaiku-Plazes Quicksilver Script] -- for Quicksilver (uses the deprecated Plazes API)
 
 == Republishing ==
 
