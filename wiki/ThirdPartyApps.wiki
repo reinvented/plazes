@@ -1,5 +1,9 @@
 #summary A gallery of third-party applications that uses the Plazes API.
 
+== Plazers ==
+
+A _Plazer_ is a tool that updates your Plazes geopresence information.
+
  * [maemoplazer]
- * [Python S60 Plazer]
+ * [PythonS60Plazer]
  * [iPlazer]
