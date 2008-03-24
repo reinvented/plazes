@@ -19,6 +19,18 @@ These applications take Plazes geopresence information and republish or reuse it
 
  * PresenceRouter
 
+
+== Code Wrappers ==
+
+These are wrappers around the Plazes API that offer ease of use in various programming languages.
+
+ * [http://code.google.com/p/servicesplazes/ Services_Plazes] -- for PHP 5.
+
+==== Need Updating ====
+
+ * [http://downside.ch/blog/?page_id=9 jplazes] -- for Java (uses the deprecated Plazes API)
+
+
 == Links ==
 
  * [http://blog.plazes.com/?p=225 PlazeCamp Demo Session Video]
