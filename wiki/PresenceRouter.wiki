@@ -14,3 +14,7 @@
  * [http://ruk.ca/ Peter Rukavina]
 
 == Screen Shots ==
+
+[http://plazes.googlecode.com/files/screenshot-presencerouter-1.png]
+
+[http://plazes.googlecode.com/files/screenshot-presencerouter-2.png]
