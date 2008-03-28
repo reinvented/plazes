@@ -11,3 +11,7 @@ These are wrappers around the Plazes API that offer ease of use in various progr
 ==== Need Updating ====
 
  * [http://downside.ch/blog/?page_id=9 jplazes] -- uses the deprecated Plazes API.
+
+== Ruby ==
+
+ * ActiveResource based wrapper. Coming very soon (first half of April 08, beat me with a soft bat if I don't hold this promise -til)
