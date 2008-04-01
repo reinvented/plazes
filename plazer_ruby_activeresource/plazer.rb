@@ -52,13 +52,13 @@ class Presence < PlazesNet::Base; end
 class Plaze    < PlazesNet::Base; end
 
 if ARGV[0] == '-h'
-  puts <<-USAGE
+  puts "
 Usage:
 ./plazer.rb [-h] [q]
 
 q  : optional text query for plaze search
 -h : view help
-USAGE
+"
   exit
 end
 
