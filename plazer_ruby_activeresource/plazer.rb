@@ -3,9 +3,17 @@
 # A very simple experimental command line plazer with mac_address and
 # text query support. Needs the ruby gem activeresource installed and
 # the programs 'route' and 'arp' to be in your path. Improvements
-# welcome. til@plazes.com
+# welcome. 
 #
-# License: GPLv2
+# This plazer implements the approach of trying to unobtrusively
+# create a presence once and then immediately exit with a notice where
+# it plazed you or that it failed. It could be run from within a
+# network-up script for example.
+#
+# It doesn't set the status message or offer to delete the created
+# presence.
+#
+# License: GPLv2 | Author: til@plazes.com
 
 require 'rubygems'
 require 'activeresource'
@@ -63,13 +71,16 @@ puts "Checking in with mac: '#{mac}' q: '#{q}'"
 presence = Presence.new
 
 if mac && q
+  # We found a mac address AND the user specified a text query
+  
+  # First try to create a presence with both
   presence = Presence.create(
     :plaze => { :q => q },
     :networks => [{:mac_address => mac}]
   )
 
-  # When failed, search for plaze by text query only, and then check
-  # in again with plaze_id and network
+  # When that failed, search for plaze by text query only, and then
+  # check in again with plaze_id and network
   if !presence.valid?
     if plaze = Plaze.find(:first, :params => { :q => q })
       presence = Presence.create(
@@ -80,17 +91,22 @@ if mac && q
     end
   end
 elsif mac
+  # We found a mac address. Just try to check in with the mac_address
+
   presence = Presence.create(
     :networks => [{:mac_address => mac}],
     :status => status
   )
 elsif q
+  # NO mac address, but user specified a text query. Just try to check
+  # in with the text query
+
   presence = Presence.create(
     :plaze => { :q => q },
     :status => status
   )
 else
-  puts "No router mac_address found. Try to plaze yourself with a text query: ./plazer.rb 'query'"
+  puts "No router mac_address found. Try to plaze yourself with a text query: ./plazer.rb 'ponybar'"
   exit
 end
 
