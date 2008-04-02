@@ -16,7 +16,7 @@ From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/anno
 === Dependencies ===
 
  * [http://wiki.opensource.nokia.com/projects/Python_for_S60 Python for S60]
- * [http://www-rp.lip6.fr/~berger/pys60.html wlantools module]
+ * [http://chris.berger.cx/PyS60/PyS60 wlantools module]
 
 == Developers ==
 
