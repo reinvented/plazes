@@ -17,7 +17,7 @@ From the [http://bazaar.launchpad.net/~tom-hughescroucher/pys60plazer/trunk/anno
 
  * [http://wiki.opensource.nokia.com/projects/Python_for_S60 Python for S60]
  * [http://chris.berger.cx/PyS60/PyS60 wlantools module]
- ** Note that you'll have to [https://www.symbiansigned.com/app/page/public/openSignedOnline.do sign this module] to be able to install it.
+  * Note that you'll have to [https://www.symbiansigned.com/app/page/public/openSignedOnline.do sign this module] to be able to install it.
 
 == Developers ==
 
