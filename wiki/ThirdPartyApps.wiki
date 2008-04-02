@@ -1,4 +1,4 @@
-#summary A gallery of third-party applications that uses the Plazes API.
+#summary A gallery of third-party applications that use the Plazes API.
 
 == Plazers ==
 
