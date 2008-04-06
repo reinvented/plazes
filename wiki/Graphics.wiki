@@ -2,6 +2,6 @@
 
 == Category Icons ==
 
-There are 20 categories of Plazes (airport, bar, cinema, etc.) and each one has an icon associated with it.  There's also an icon for "people" and one for "group."  These icons are [http://plazes.googlecode.com/files/PlazesCategoryIcons.zip available as GIF and PNG files], in two sizes (24x24 and 40x40):
+There are 19 categories of Plazes (airport, bar, cinema, etc.), an default icon for uncategorized Plazes, and an icon for "people" and one for "group."  These icons are [http://plazes.googlecode.com/files/PlazesCategoryIcons.zip available as GIF and PNG files], in two sizes (24x24 and 40x40):
 
 [http://plazes.googlecode.com/files/PlazesIconGallery.png]
