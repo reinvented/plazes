@@ -7,6 +7,7 @@ A _Plazer_ is a tool that updates your Plazes geopresence information.
  * [maemoplazer] -- for devices like the Nokia N800.
  * [PythonS60Plazer] -- for devices like the Nokia N95.
  * [iPlazer] -- for the iPhone and iPod Touch.
+ * [http://tinyplazer.com TinyPlazer] -- a web app for mobile devices
  * [http://code.google.com/p/plazes/source/browse/trunk/plazer_ruby_activeresource/plazer.rb plazer_ruby_activeresource] -- A simple commandline plazer
 
 ==== Need Updating ====
