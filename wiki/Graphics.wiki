@@ -1,5 +1,9 @@
 #summary Graphics useful for developers.
 
+== Plazes Logo ==
+
+The Plazes logo is available in a [http://plazes.googlecode.com/files/PlazesLogos.zip variety of bitmap and vector formats].
+
 == Category Icons ==
 
 There are 19 categories of Plazes (airport, bar, cinema, etc.), an default icon for uncategorized Plazes, and an icon for "people" and one for "group."  These icons are [http://plazes.googlecode.com/files/PlazesCategoryIcons.zip available as GIF and PNG files], in two sizes (24x24 and 40x40):
