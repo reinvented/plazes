@@ -2,7 +2,7 @@
 
 == Plazes Logo ==
 
-The Plazes logo is available in a [http://plazes.googlecode.com/files/PlazesLogos.zip variety of bitmap and vector formats].
+The Plazes logo is available in a [http://plazes.googlecode.com/files/PlazesLogos.zip variety of bitmap and vector formats] for use in third-party applications.
 
 == Category Icons ==
 
