@@ -46,6 +46,8 @@ networks[][mountaintop]=everest
 
 Like Ethernet devices, Bluetooth devices are assigned globally unique Bluetooth Device Addresses, also known as the BD_ADDR.  This is a 48-bit address that's commonly expressed just like a MAC address: the address of my laptop, for example, is *00:16:cb:36:cc:d0*.
 
+The [http://bluetooth.com/Bluetooth/Technology/Works/Architecture__Baseband.htm Bluetooth website] has more details about Bluetooth Device Addressing.
+
 It's proposed that the *networks* parameter key for Bluetooth devices addresses is '''bd_addr'''.
 
 In practice this means that if I arrived at the office and programatically detected the presence of my laptop via Bluetooth for the first time, I could create a presence:
