@@ -63,3 +63,24 @@ Following after that, I could pass that address back to query Plazes:
 {{{
 http://plazes.net/plazes?networks[][bd_addr]=00:16:cb:36:cc:d0
 }}}
+
+===GSM Cell Identifiers===
+
+Every GSM cell is uniquely identified by a Cell Global Identity (CGI) identifier, which consists of four parts:
+
+ * Mobile Country Code (MCC) - A 3-digit code that uniquely identifies the country.  For example, the MCC for Canada is *302*.
+ * Mobile Network Code (MNC) - A 2 or 3-digit code that identifies the home GSM network operator ("the phone company").  For example, the MNC for Rogers Wireless in Canada is *720*.
+ * Location Area Code (LAC) - A 16-bit number identifying a location area within a GSM network.
+ * Cell Identity (CI) - A 16-bit number that identifies a cell within a location area.
+
+It's proposed that the *networks* parameter key for GSM cells is '''gsm_cgi''', in the format:
+
+{{{
+MCC:MNC:LAC:CI
+}}}
+
+Each component would be expressed as a decimal number.  For example:
+
+{{{
+302:720:1300:7171
+}}}
