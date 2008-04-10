@@ -1,0 +1,63 @@
+#summary Proposed standards for network identifiers.
+
+From its earliest incarnation, Plazes has included the ability to tie a Ethernet network MAC address to a Plaze. This is how the Plazer works: it looks up the MAC of the local network, and sends this to Plazes.com to retrieve the Plaze, if any, associated with that MAC.
+
+The [http://plazes.net/doc Plazes.net API] extends this functionality to include the ability to use additional network identifiers.
+
+==Plazes.net API Support==
+
+===Creating a Presence===
+
+When you *create a new presence* with [http://plazes.net/doc/presences_collection#POST POST /presences] you can include networks information.  For example, to include the MAC address, you pass *mac_address*, like this:
+
+{{{
+<presence>
+    <networks type="array">
+      <network>
+        <mac_address>00:00:00:00:00:aa</mac_address>
+      </network>
+    </networks>
+</presence>        
+}}}
+
+===Querying Plazes===
+
+When you *query plazes* with [http://plazes.net/doc/plazes_collection#GET GET /plazes] you can include networks information to supplement your query.  For example, if you have a MAC address and want to identify its Plazes, you can do this:
+
+{{{
+GET /plazes.xml
+Content-type: application/x-www-form-urlencoded
+networks[][mac_address]=00:00:00:00:00:aa
+}}}
+
+==Beyond the MAC Address==
+
+The *networks* parameter has now been generalized to allow network identifiers _in addition_ to Ethernet MAC addresses to be used.  The parameter is now a set of key/value pairs, and the key can be an arbitrary value of your choosing.
+
+Although you can use *any* value as a key:
+
+{{{
+networks[][mountaintop]=everest
+}}}
+
+...it makes sense that we agree on some standards for commonly-used networks.  Currently proposed are:
+
+===Bluetooth===
+
+Like Ethernet devices, Bluetooth devices are assigned globally unique Bluetooth Device Addresses, also known as the BD_ADDR.  This is a 48-bit address that's commonly expressed just like a MAC address: the address of my laptop, for example, is *00:16:cb:36:cc:d0*.
+
+It's proposed that the *networks* parameter key for Bluetooth devices addresses is '''bd_addr'''.
+
+In practice this means that if I arrived at the office and programatically detected the presence of my laptop via Bluetooth for the first time, I could create a presence:
+
+{{{
+POST /presences.xml
+Content-type: application/x-www-form-urlencoded
+presence[networks][][bd_addr]=00:16:cb:36:cc:d0&presence[status]=at+the+office&presence[plaze_id]=17631
+}}}
+
+Following after that, I could pass that address back to query Plazes:
+
+{{{
+http://plazes.net/plazes?networks[][bd_addr]=00:16:cb:36:cc:d0
+}}}
