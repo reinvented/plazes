@@ -84,3 +84,17 @@ Each component would be expressed as a decimal number.  For example:
 {{{
 302:720:1300:7171
 }}}
+
+For example:
+
+{{{
+POST /presences.xml
+Content-type: application/x-www-form-urlencoded
+presence[networks][][gsm_cgi]=0302:720:1300:7171&presence[status]=at+the+office&presence[plaze_id]=17631
+}}}
+
+Following after that, I could pass that address back to query Plazes:
+
+{{{
+http://plazes.net/plazes?networks[][gsm_cgi]=302:720:1300:7171
+}}}
