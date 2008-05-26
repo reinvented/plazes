@@ -20,3 +20,7 @@ A _Plazer_ is a tool that updates your Plazes geopresence information.
 These applications take Plazes geopresence information and republish or reuse it elsewhere.
 
  * PresenceRouter
+
+== Web Apps ==
+
+ * Live: [http://lunchrrr.com] Code: [http://github.com/til/lunchrrr/tree/master] -- A small web app that uses plazes.net to coordinates the daily going-out-to-lunch routine
