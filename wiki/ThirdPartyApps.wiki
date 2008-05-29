@@ -20,6 +20,7 @@ A _Plazer_ is a tool that updates your Plazes geopresence information.
 These applications take Plazes geopresence information and republish or reuse it elsewhere.
 
  * PresenceRouter
+ * EmailSignatureRuby
 
 == Web Apps ==
 
