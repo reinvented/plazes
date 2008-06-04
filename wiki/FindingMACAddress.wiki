@@ -30,4 +30,6 @@ $SED "s/^\(.\):/0\1:/" | \
 $SED "s/:\(.\):/:0\1:/g" | \
 $SED "s/:\(.\):/:0\1:/g" | \
 $SED "s/:\(.\)$/:0\1/"`
+
+echo "MAC Address is : $MACADDRESS_CONVERTED"
 }}}
