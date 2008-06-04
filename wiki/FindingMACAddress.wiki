@@ -21,7 +21,7 @@ CUT="/usr/bin/cut"
 GATEWAY=`$NETSTAT -rn | $GREP default | $CUT -c20-35`
 
 # Get the MAC address of the default gateway.
-MACADDRESS=`$ARP -n $GATEWAY | cut -f4 -d' '`
+MACADDRESS=`$ARP -n $GATEWAY | $CUT -f4 -d' '`
 
 # Pad the single-hex parts of the MAC address with leading zero
 # i.e. 0:4:5a:fd:83:f9 becomes 00:04:5a:fd:83:f9
@@ -50,7 +50,7 @@ TAIL="/usr/bin/tail"
 GATEWAY=`$NETSTAT -rn | $GREP "^0.0.0.0" | $CUT -c17-31`
 
 # Get the MAC address of the default gateway.
-MACADDRESS=`$ARP -n $GATEWAY | $TAIL -n1 | cut -c34-50`
+MACADDRESS=`$ARP -n $GATEWAY | $TAIL -n1 | $CUT -c34-50`
 
 # Convert letters in the MAC address to lower case.
 MACADDRESS=`echo $MACADDRESS | \
