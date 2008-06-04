@@ -56,5 +56,5 @@ MACADDRESS=`$ARP -n $GATEWAY | $TAIL -n1 | cut -c34-50`
 MACADDRESS=`echo $MACADDRESS | \
 $SED 'y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
 
-echo "MAC Address : $MACADDRESS"
+echo "MAC Address is : $MACADDRESS"
 }}}
