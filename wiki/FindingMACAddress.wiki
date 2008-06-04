@@ -1,0 +1,7 @@
+#summary How to identify the MAC address of the network gateway for various OSes.
+
+= Introduction =
+
+One of the easiest ways of identifying the "current Plaze" is to use the MAC address of the network gateway, passing it to the API as a [NetworkIdentifiers network identifier].
+
+The MAC address of the network is available in a variety of ways, which tend to vary according to operating system, and even within OS flavours.  This page is an attempt to document these methods.
