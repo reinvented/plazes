@@ -15,3 +15,7 @@ These are wrappers around the Plazes API that offer ease of use in various progr
 == Ruby ==
 
  * ActiveResource based wrapper. Coming very soon (first half of April 08 -til)
+
+== Shell Scripts ==
+
+ * [FindingMACAddress Finding the MAC Address]
