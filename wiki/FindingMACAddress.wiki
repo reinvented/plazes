@@ -5,3 +5,29 @@
 One of the easiest ways of identifying the "current Plaze" is to use the MAC address of the network gateway, passing it to the API as a [NetworkIdentifiers network identifier].
 
 The MAC address of the network is available in a variety of ways, which tend to vary according to operating system, and even within OS flavours.  This page is an attempt to document these methods.
+
+== Mac OS X ==
+
+{{{
+#!/bin/bash
+
+ARP="/usr/sbin/arp"
+NETSTAT="/usr/sbin/netstat"
+GREP="/usr/bin/grep"
+SED="/usr/bin/sed"
+CUT="/usr/bin/cut"
+
+# Get the default gateway's IP address.
+GATEWAY=`$NETSTAT -rn | $GREP default | $CUT -c20-35`
+
+# Get the MAC address of the default gateway.
+MACADDRESS=`$ARP -n $GATEWAY | cut -f4 -d' '`
+
+# Pad the single-hex parts of the MAC address with leading zero
+# i.e. 0:4:5a:fd:83:f9 becomes 00:04:5a:fd:83:f9
+MACADDRESS_CONVERTED=`echo $MACADDRESS | \
+$SED "s/^\(.\):/0\1:/" | \
+$SED "s/:\(.\):/:0\1:/g" | \
+$SED "s/:\(.\):/:0\1:/g" | \
+$SED "s/:\(.\)$/:0\1/"`
+}}}
