@@ -34,7 +34,7 @@ $SED "s/:\(.\)$/:0\1/"`
 echo "MAC Address is : $MACADDRESS"
 }}}
 
-== RedHat Enterprise Linux ==
+== Redhat Enterprise Linux ==
 
 {{{
 #!/bin/bash
