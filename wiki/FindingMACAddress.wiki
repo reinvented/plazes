@@ -25,11 +25,36 @@ MACADDRESS=`$ARP -n $GATEWAY | cut -f4 -d' '`
 
 # Pad the single-hex parts of the MAC address with leading zero
 # i.e. 0:4:5a:fd:83:f9 becomes 00:04:5a:fd:83:f9
-MACADDRESS_CONVERTED=`echo $MACADDRESS | \
+MACADDRESS=`echo $MACADDRESS | \
 $SED "s/^\(.\):/0\1:/" | \
 $SED "s/:\(.\):/:0\1:/g" | \
 $SED "s/:\(.\):/:0\1:/g" | \
 $SED "s/:\(.\)$/:0\1/"`
 
-echo "MAC Address is : $MACADDRESS_CONVERTED"
+echo "MAC Address is : $MACADDRESS"
+}}}
+
+== RedHat Enterprise Linux ==
+
+{{{
+#!/bin/bash
+
+ARP="/sbin/arp"
+NETSTAT="/bin/netstat"
+GREP="/bin/grep"
+SED="/bin/sed"
+CUT="/bin/cut"
+TAIL="/usr/bin/tail"
+
+# Get the default gateway's IP address.
+GATEWAY=`$NETSTAT -rn | $GREP "^0.0.0.0" | $CUT -c17-31`
+
+# Get the MAC address of the default gateway.
+MACADDRESS=`$ARP -n $GATEWAY | $TAIL -n1 | cut -c34-50`
+
+# Convert letters in the MAC address to lower case.
+MACADDRESS=`echo $MACADDRESS | \
+$SED 'y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`
+
+echo "MAC Address : $MACADDRESS"
 }}}
