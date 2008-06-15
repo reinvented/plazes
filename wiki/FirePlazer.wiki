@@ -4,6 +4,10 @@
 
 FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough around the edges, doesn't yet exist as a public easy-to-install XPI binary, and has only been tested under Mac OS X, but it _does_ work, and, what's more, it can [FindingMACAddress grab the MAC address of your default gateway] to "auto-Plaze" you.
 
+== Contributors Welcome ==
+
+This is my first stab at extension development.  I'd like some help in taking FirePlazer ahead.  If you're interested in contributing, please [mailto:reinvented+fireplazer@gmail.com send me an email].
+
 == System Requirements ==
 
  * Firefox 3.0 or later
