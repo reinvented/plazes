@@ -2,14 +2,36 @@
 
 == Introduction ==
 
-FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough around the edges, doesn't yet exist as a public easy-to-install XPI binary, and has only been tested until Mac OS X, but it ''does'' work, and, what's more, it can [FindingMACAddress grab the MAC address of your default gateway] to "auto-Plaze" you.
+FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough around the edges, doesn't yet exist as a public easy-to-install XPI binary, and has only been tested until Mac OS X, but it _does_ work, and, what's more, it can [FindingMACAddress grab the MAC address of your default gateway] to "auto-Plaze" you.
 
 == System Requirements ==
 
  * Firefox 3.0 or later
  * Mac OS X supports auto-Plazing via MAC address (tested).
- * Linux supports auto-Plazing via MAC address ('''not''' tested).
+ * Linux supports auto-Plazing via MAC address (_not_ tested).
  * No Windows support for auto-Plazing, but does support keyword search of Plazes.
+
+FirePlazer is targeted at [http://plazes.net Plazes.net] and it assumes that you _already_ have a Plazes.net username and password stored in the Login Manager of your browser. 
+
+== Usage Notes ==
+
+Make sure you've already got your Plazes.net username and password stored in the Firefox Login Manager before attempting to use FirePlazer, as that's where it looks for them (just login to Plazes.net and let Firefox save the login details when prompted).
+
+Once installed, you can open the FirePlazer sidebar with:
+
+ * *View | Sidebar | FirePlazer* from the Firefox menu.
+ * (Command | Alt) + Shift + F keyboard shortcut.
+
+You'll see a "Plaze" search at the top of the sidebar.  
+
+ * Leave this field *empty* and click "Search" and Fireplazer will look up the MAC address of your network's default gateway and find any Plazes associated with it (presently this only works for Mac OS X and Linux, and has only been ''tested'' on a Mac).
+ * Enter a *keyword* in this field and click "Search" and FirePlazes will return a list of matching Plazes.
+
+Once you've search for the appropriate Plaze, select the one you want to use from the pop-up menu (there's no facility built in for "create a new Plaze" yet).
+
+Then, in the "What and When?" section, enter a status message (optional) and adjust the date and time (optional; defaults to the current time, so you only need to adjust if you want to Plaze yourself in the past or in the future).
+
+Finally, click "Plaze Me" to create your presence.
 
 == Screen Shots ==
 
