@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough around the edges, doesn't yet exist as a public easy-to-install XPI binary, and has only been tested until Mac OS X, but it _does_ work, and, what's more, it can [FindingMACAddress grab the MAC address of your default gateway] to "auto-Plaze" you.
+FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough around the edges, doesn't yet exist as a public easy-to-install XPI binary, and has only been tested under Mac OS X, but it _does_ work, and, what's more, it can [FindingMACAddress grab the MAC address of your default gateway] to "auto-Plaze" you.
 
 == System Requirements ==
 
