@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type"text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css" ?>
+<!DOCTYPE page SYSTEM "chrome://fireplazer/locale/fireplazer.dtd">
+<page id="sbFireplazer" title="&fireplazer.title;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="jquery-1.2.6.min.js" />
+<script src="fireplazer.js" />
+  <vbox flex="1">
+	<groupbox>
+	  <caption label="&whereLabel;" />
+		<grid>
+	    	<columns>
+		      <column flex="0" />
+		      <column flex="1" />
+		    </columns>
+			<rows>
+				<row>
+					<label control="plazekeyword" value="Plaze:" />
+			 		<textbox id="plazekeyword" value="" />
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+				
+	<button flex="0" id="find-mac-button" label="&searchLabel;" oncommand="SearchForPlaze();" />
+
+	<menulist flex="0" id="plaze-menu-list" rows="5"></menulist>
+
+	<groupbox flex="0">
+	  	<caption label="&whatwhenLabel;" />
+		<grid>
+			<columns>
+		      	<column flex="1" />
+		  		<column flex="2" />
+		    </columns>
+			<rows>
+			    <row>
+					<label control="status" value="&statusLabel;" />
+				 	<textbox id="status" value="" />
+				</row>
+				<row>
+					<label control="presencedate" value="&dateLabel;" />
+					<datepicker id="presencedate" />
+				</row>
+				<row>
+					<label control="presencetime" value="&timeLabel;" />
+					<timepicker id="presencetime" /> 
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+	
+	<button flex="0" id="plazeme-button" label="&plazemeLabel;" oncommand="PlazeMe();" disabled="true" />
+
+	<groupbox flex="2">
+	  <caption label="&presencesLabel;" />
+		<grid flex="2" style="overflow:auto">
+	    	<columns>
+		      <column flex="0" />
+		      <column flex="1" />
+		    </columns>
+			<rows datasources="http://plazes.com/presences.xml;related" ref="*" querytype="xml">
+				<template>
+			    	<query expr="presence">
+						<assign var="?avatar" expr="user/avatar_url" />
+						<assign var="?plaze" expr="plaze/name" />
+						<assign var="?user" expr="user/name" />
+						<assign var="?full_name" expr="user/full_name" />
+						<assign var="?status" expr="status" />
+					</query>
+			    	<action>
+						<row uri="?" align="start">
+							<image flex="0" src="?avatar" width="50" height="50" />
+							<vbox flex="1">
+								<label class="header" value="?full_name" />
+								<description class="indent"><textnode value="?plaze" /></description>
+								<description class="indent"><textnode value="?status" /></description>
+							</vbox>   
+						</row>
+	    			</action>
+			  	</template>
+			</rows>
+		</grid>
+	</groupbox>
+  </vbox>
+</page>

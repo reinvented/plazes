@@ -1,0 +1,6 @@
+content     fireplazer    						 chrome/content/
+locale 		fireplazer 							 en-US locale/en-US/
+locale 		fireplazer 							 fr-CA locale/fr-CA/
+locale 		fireplazer 							 de-DE locale/de-DE/
+skin		fireplazer							 classic/1.0	chrome/skin/
+overlay 	chrome://browser/content/browser.xul chrome://fireplazer/content/overlay.xul

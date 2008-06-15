@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://fireplazer/locale/fireplazer.dtd">
+<overlay id="FireplazerOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <menupopup id="viewSidebarMenu">
+    <menuitem key="key_openFireplazerSidebar" observes="viewFireplazerSidebar"  />
+  </menupopup>
+  
+  <keyset id="mainKeyset">
+    <key id="key_openFireplazerSidebar" command="viewFireplazerSidebar"
+         key="&openFireplazerSidebar.commandkey;" 
+         modifiers="&openFireplazerSidebar.modifierskey;" />
+  </keyset>
+  
+  <broadcasterset id="mainBroadcasterSet"> 
+    <broadcaster id="viewFireplazerSidebar" 
+                 label="&fireplazer.title;"
+                 autoCheck="false"
+                 type="checkbox"
+                 group="sidebar"
+                 sidebarurl="chrome://fireplazer/content/fireplazer.xul"
+                 sidebartitle="&fireplazer.title;"
+                 oncommand="toggleSidebar('viewFireplazerSidebar');" />
+  </broadcasterset>
+</overlay>

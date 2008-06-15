@@ -1,0 +1,11 @@
+<!ENTITY fireplazer.title "FirePlazer">
+<!ENTITY openFireplazerSidebar.commandkey "F">
+<!ENTITY openFireplazerSidebar.modifierskey "shift accel">
+<!ENTITY whereLabel "Où?">
+<!ENTITY searchLabel "Recherche">
+<!ENTITY whatwhenLabel "Quoi et quand?">
+<!ENTITY statusLabel "État:">
+<!ENTITY dateLabel "Date:">
+<!ENTITY timeLabel "Heure:">
+<!ENTITY plazemeLabel "Plaze Me">
+<!ENTITY presencesLabel "Présences du contact (de Plazes.com)">
