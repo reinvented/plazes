@@ -11,7 +11,7 @@ FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough
  * Linux supports auto-Plazing via MAC address (_not_ tested).
  * No Windows support for auto-Plazing, but does support keyword search of Plazes.
 
-FirePlazer is targeted at [http://plazes.net Plazes.net] and it assumes that you _already_ have a Plazes.net username and password stored in the Login Manager of your browser. 
+FirePlazer is targeted at [http://plazes.net Plazes.net] and it assumes that you _already_ have a Plazes.net username and password stored in the [http://developer.mozilla.org/en/docs/Using_nsILoginManager Login Manager] of your Firefox. 
 
 == Download ==
 
@@ -31,7 +31,7 @@ You should now find FirePlazer has been installed (you can look under *Tools | A
 
 === Authentication ===
 
-Make sure you've already got your Plazes.net username and password stored in the Firefox Login Manager before attempting to use FirePlazer, as that's where it looks for them (just login to Plazes.net and let Firefox save the login details when prompted).
+Make sure you've already got your Plazes.net username and password stored in the Firefox [http://developer.mozilla.org/en/docs/Using_nsILoginManager Login Manager] before attempting to use FirePlazer, as that's where it looks for them (just login to Plazes.net and let Firefox save the login details when prompted).
 
 === Creating a Presence ===
 
@@ -42,7 +42,7 @@ Once installed, you can open the FirePlazer sidebar with:
 
 You'll see a "Plaze" search at the top of the sidebar.  
 
- * Leave this field *empty* and click "Search" and Fireplazer will look up the MAC address of your network's default gateway and find any Plazes associated with it (presently this only works for Mac OS X and Linux, and has only been ''tested'' on a Mac).
+ * Leave this field *empty* and click "Search" and FirePlazer will look up the MAC address of your network's default gateway and find any Plazes associated with it (presently this only works for Mac OS X and Linux, and has only been ''tested'' on a Mac).
  * Enter a *keyword* in this field and click "Search" and FirePlazes will return a list of matching Plazes.
 
 Once you've search for the appropriate Plaze, select the one you want to use from the pop-up menu (there's no facility built in for "create a new Plaze" yet).
