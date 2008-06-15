@@ -13,6 +13,20 @@ FirePlazer is my attempt to build a Plazer into a Firefox extension.  It's rough
 
 FirePlazer is targeted at [http://plazes.net Plazes.net] and it assumes that you _already_ have a Plazes.net username and password stored in the Login Manager of your browser. 
 
+== Download ==
+
+No easy-to-install XPI file is yet available for FirePlazer, so you must manually install the extension.
+
+ # Grab the [http://code.google.com/p/plazes/source/browse/trunk/fireplazer/ source code via SVN] and place it in a local directory.
+ # As [http://developer.mozilla.org/en/docs/Building_an_Extension#Test outlined more fully here], create a file in your Firefox profile's extensions directory:
+  # Locate your [http://kb.mozillazine.org/Profile_folder Profile Folder].
+  # Open the *extensions* folder found therein.
+  # Create a new text file called *app@fireplazer.com* and inside the file put the path to the FirePlazer source you downloaded (this is the directory that contains the install.rdf file).  For example, if you downloaded to */Users/fred/fireplazer* you should put */Users/fred/fireplazer/* (trailing slash required) in this file.
+  # Save the file.
+  # Restart Firefox.
+
+You should now find FirePlazer has been installed (you can look under *Tools | Add-ons | Extensions* to confirm).
+
 == Usage Notes ==
 
 === Authentication ===
