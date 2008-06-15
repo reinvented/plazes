@@ -15,7 +15,11 @@ FirePlazer is targeted at [http://plazes.net Plazes.net] and it assumes that you
 
 == Usage Notes ==
 
+=== Authentication ===
+
 Make sure you've already got your Plazes.net username and password stored in the Firefox Login Manager before attempting to use FirePlazer, as that's where it looks for them (just login to Plazes.net and let Firefox save the login details when prompted).
+
+=== Creating a Presence ===
 
 Once installed, you can open the FirePlazer sidebar with:
 
@@ -32,6 +36,34 @@ Once you've search for the appropriate Plaze, select the one you want to use fro
 Then, in the "What and When?" section, enter a status message (optional) and adjust the date and time (optional; defaults to the current time, so you only need to adjust if you want to Plaze yourself in the past or in the future).
 
 Finally, click "Plaze Me" to create your presence.
+
+=== Contacts' Presences ===
+
+Because Plazes.net doesn't yet have a "social layer," there's no facility through the Plazes.net API to obtain "your contacts' presences," so, for the time being, FirePlazer displays your _Plazes.com_ contacts instead (the assumption is that your Plazes.net and Plazes.com username and password are the same).
+
+These presences are displayed using a programatically-elegant [http://code.google.com/p/plazes/source/browse/trunk/fireplazer/chrome/content/fireplazer.xul#62 XUL XML template] that is, at present, otherwise rather ugly in terms of functionality and design.
+
+== Known Issues ==
+
+=== Auto-plazing ===
+
+ * The "auto-plazing" process works by running a BASH shell script using [http://developer.mozilla.org/en/docs/nsIProcess nsIProcess].  It's only been tested under Mac OS X Leopard, and although I've attempted to make allowances for operation under Linux, I haven't tested this.  
+ * Auto-plazing _doesn't_ work  under Windows, although I've got the beginnings of some [FindingMACAddress MAC address lookup code] for Windows that uses VBScript that might be integrated.
+
+=== Error Handling ===
+
+ * There's less error handling than there should be, particularly if no Plaze can be found based on your MAC or keyword search.
+
+=== UI ===
+
+ * The "you've been plazed" confirmation message, which appears in the "Plaze Me" button, needs some thought -- there's a better way to do this.
+
+== To Do ==
+
+ * Test under different operating systems (Linux flavours, different OS X versions).
+ * Add "create a new Plaze" functionality if no appropriate Plaze found.
+ * Accommodate the (not yet developed) Plazes.net social layer when available.
+ * UI improvments, especially to "Contacts' Presences".
 
 == Screen Shots ==
 
