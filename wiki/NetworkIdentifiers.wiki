@@ -1,5 +1,17 @@
 #summary Proposed standards for network identifiers.
 
+----
+
+==The Plazes.net website and API service are ceasing operation as of August 15, 2008==
+
+*With the [http://blog.plazes.com/?p=253 acquisition of Plazes by Nokia now complete] the Plazes development team is concentrating its resources building something new within Nokia, and it's very likely that the structure of the Plazes API will change significantly.*
+
+===As such, the Plazes.net website and the Plazes.net API will cease operation on August 15, 2008.===
+
+*The Plazes.com site, and [http://plazes.com/api/docs the Plazes.com API], will remain in operation for the time-being.*
+
+----
+
 From its earliest incarnation, Plazes has included the ability to tie a Ethernet network MAC address to a Plaze. This is how the Plazer works: it looks up the MAC of the local network, and sends this to Plazes.com to retrieve the Plaze, if any, associated with that MAC.
 
 The [http://plazes.net/doc Plazes.net API] extends this functionality to include the ability to use additional network identifiers.
