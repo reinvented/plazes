@@ -1,5 +1,17 @@
 #summary Graphics useful for developers.
 
+----
+
+==The Plazes.net website and API service are ceasing operation as of August 15, 2008==
+
+*With the [http://blog.plazes.com/?p=253 acquisition of Plazes by Nokia now complete] the Plazes development team is concentrating its resources building something new within Nokia, and it's very likely that the structure of the Plazes API will change significantly.*
+
+===As such, the Plazes.net website and the Plazes.net API will cease operation on August 15, 2008.===
+
+*The Plazes.com site, and [http://plazes.com/api/docs the Plazes.com API], will remain in operation for the time-being.*
+
+----
+
 == Plazes Logo ==
 
 The Plazes logo is available in a [http://plazes.googlecode.com/files/PlazesLogos.zip variety of bitmap and vector formats] for use in third-party applications.
