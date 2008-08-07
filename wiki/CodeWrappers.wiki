@@ -1,5 +1,17 @@
 #summary Utility code for various programming languages to make using the Plazes API easier.
 
+----
+
+==The Plazes.net website and API service are ceasing operation as of August 15, 2008==
+
+*With the [http://blog.plazes.com/?p=253 acquisition of Plazes by Nokia now complete] the Plazes development team is concentrating its resources building something new within Nokia, and it's very likely that the structure of the Plazes API will change significantly.*
+
+===As such, the Plazes.net website and the Plazes.net API will cease operation on August 15, 2008.===
+
+*The Plazes.com site, and [http://plazes.com/api/docs the Plazes.com API], will remain in operation for the time-being.*
+
+----
+
 These are wrappers around the Plazes API that offer ease of use in various programming languages.
 
 == PHP ==
